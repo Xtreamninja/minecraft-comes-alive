@@ -560,9 +560,9 @@ public class VillagerEntityMCA extends VillagerEntity implements VillagerLike<Vi
 
         // you can't hit babies!
         // TODO: Verify the `isUnblockable` replacement for 1.19.4, ensure same behavior
-        if (!Config.getInstance().canHurtBabies && !source.isIn(DamageTypeTags.BYPASSES_SHIELD) && getAgeState() == AgeState.BABY) {
-            if (source.getAttacker() instanceof PlayerEntity && requestCooldown()) {
-                sendEventMessage(Text.translatable("villager.baby_hit"));
+            if (!Config.getInstance().canHurtBabies && !source.isIn(DamageTypeTags.BYPASSES_SHIELD)) {
+                if (source.getAttacker() instanceof PlayerEntity && requestCooldown()) {
+            	    sendEventMessage(Text.translatable("villager.baby_hit"));
             }
             return super.damage(source, 0.0f);
         }

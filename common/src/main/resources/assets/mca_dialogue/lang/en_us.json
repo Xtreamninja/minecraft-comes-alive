@@ -17,7 +17,7 @@
   "villager.cant_find_bed/1": "I think I'm lost, I can't find a way home.",
   "villager.cant_find_bed/2": "Not again. I need a new home, I can't find my current one.",
 
-  "villager.baby_hit/0": "You can't hit a baby!",
+  "villager.baby_hit/0": "This villager is protected",
 
   "villager.hurt/1": "Ow! That hurt!",
   "villager.hurt/2": "I'll get you for that!",
